@@ -3,41 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memórias Incríveis com Meu Irmão</title>
+  <title>Galeria de Memórias Incríveis</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Momentos Inesquecíveis com Meu Irmão</h1>
-    <p>Essas fotos guardam nossas melhores aventuras e sorrisos!</p>
+    <h1>Memórias Incríveis com Meu Irmão</h1>
+    <p>Aqui estão as fotos dos nossos momentos mais especiais juntos!</p>
   </header>
 
-  <section class="card-container">
+  <section class="gallery-container">
     <div class="card">
-      <img src="img/foto1.jpg" alt="Dia Especial 1">
-      <h3>Dia Especial 1</h3>
-      <p>Aquele dia que foi pura alegria, e guardamos no coração para sempre.</p>
+      <img src="img/foto1.jpg" alt="Imagem 1" onclick="openLightbox(this.src)">
+      <h3>Imagem 1</h3>
+      <p>Aquele dia especial que sempre vamos lembrar.</p>
     </div>
 
     <div class="card">
-      <img src="img/foto2.jpg" alt="Aventura Incrível 2">
-      <h3>Aventura Incrível 2</h3>
-      <p>Nada como uma aventura épica ao lado do melhor irmão do mundo!</p>
+      <img src="img/foto2.jpg" alt="Imagem 2" onclick="openLightbox(this.src)">
+      <h3>Imagem 2</h3>
+      <p>Mais uma aventura incrível juntos!</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Foto Aleatória 3">
-      <h3>Recordação 3</h3>
-      <p>Essa foto sempre me faz lembrar dos nossos melhores momentos juntos.</p>
+      <img src="https://via.placeholder.com/300x200" alt="Imagem 3" onclick="openLightbox(this.src)">
+      <h3>Imagem 3</h3>
+      <p>Esse dia foi pura diversão.</p>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Lembrança 4">
-      <h3>Lembrança 4</h3>
-      <p>Mais uma memória que faz meu coração sorrir. Obrigado por tudo, irmão!</p>
+      <img src="https://via.placeholder.com/300x200" alt="Imagem 4" onclick="openLightbox(this.src)">
+      <h3>Imagem 4</h3>
+      <p>Momentos que ficam para sempre.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Imagem 5" onclick="openLightbox(this.src)">
+      <h3>Imagem 5</h3>
+      <p>Memórias para serem guardadas no coração.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Imagem 6" onclick="openLightbox(this.src)">
+      <h3>Imagem 6</h3>
+      <p>Mais uma recordação inesquecível.</p>
     </div>
   </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
 
   <script src="script.js"></script>
 </body>

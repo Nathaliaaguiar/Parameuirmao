@@ -18,7 +18,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #FF6F91;
+  color: #103b82;
 }
 
 header p {
@@ -51,7 +51,7 @@ header p {
 .card h3 {
   margin: 15px;
   font-size: 1.5rem;
-  color: #FF6F91;
+  color: #103b82;
 }
 
 .card p {
@@ -96,5 +96,5 @@ header p {
 }
 
 .close:hover {
-  color: #FF6F91;
+  color: #103b82;
 }
